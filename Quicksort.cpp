@@ -4,7 +4,9 @@
 
 #include "Quicksort.h"
 
-Quicksort::Quicksort() {}
+Quicksort::Quicksort() {
+
+}
 
 Quicksort::~Quicksort() {
 
