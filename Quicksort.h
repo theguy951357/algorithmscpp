@@ -12,6 +12,12 @@ public:
 
     virtual ~Quicksort();
 
+    void quicksort(int A[], int p, int r);
+
+private:
+    int partition(int A[], int p, int r);
+
+    void swap(int A[], int a, int b);
 };
 
 
