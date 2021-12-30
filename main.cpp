@@ -4,11 +4,12 @@
 using namespace std;
 
 int main() {
-    int Array[] = {10,1,9,2,8,3,7,4,6,5};
+    vector<int> Array = {10, 1, 9, 2, 8, 3, 7, 4, 6, 5};
+    vector<int>::iterator it;
     auto qs = new Quicksort();
-    qs->quicksort(Array,0,9);
-    for (int i : Array) {
-        cout<<i<<" ";
+    qs->quicksort(&Array,0,Array.size()-1);
+    for (it=Array.begin(); it!=Array.end(); ++it) {
+        cout<<*it<<" ";
     }
     cout<<endl;
     return 0;
