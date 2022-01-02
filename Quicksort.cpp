@@ -4,6 +4,8 @@
 
 #include "Quicksort.h"
 
+default_random_engine mt(time(nullptr));
+
 Quicksort::Quicksort() = default;
 
 
@@ -35,6 +37,18 @@ void Quicksort::quicksort(vector<int> *A, int p, int r) {
         quicksort(A, q + 1, r);
     }
 }
+
+void Quicksort::randomizedQuicksort(vector<int> *A, int p, int r){
+    if(p<r) {
+        uniform_int_distribution<int> dist(p,  r);
+        int rando = dist(mt);
+        swap(A, rando, r);
+        int q = partition(A, p, r);
+        randomizedQuicksort(A, p, q - 1);
+        randomizedQuicksort(A, q + 1, r);
+    }
+}
+
 
 
 

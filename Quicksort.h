@@ -5,6 +5,10 @@
 #ifndef QUICKSORT_QUICKSORT_H
 #define QUICKSORT_QUICKSORT_H
 #include <vector>
+#include <ctime>
+#include <random>
+#include <cstdlib>
+
 
 using namespace std;
 class Quicksort {
@@ -15,12 +19,15 @@ public:
 
     void quicksort(vector<int> *A, int p, int r);
 
+    void randomizedQuicksort(vector<int> *A, int p, int r);
+
 private:
     int partition(vector<int> *A, int p, int r);
 
     void swap(vector<int> *A, int a, int b);
 
     //vector<int> A;
+
 };
 
 
