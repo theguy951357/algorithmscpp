@@ -4,10 +4,18 @@
 
 #ifndef RAMMODEL_COUNTINGSORT_H
 #define RAMMODEL_COUNTINGSORT_H
+#include <vector>
 
+using namespace std;
 
 class CountingSort {
 
+public:
+    CountingSort();
+
+private:
+
+    void countingSort(vector<int> A, vector<int> B, int k);
 };
 
 
