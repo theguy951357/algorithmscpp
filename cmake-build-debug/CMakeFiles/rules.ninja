@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__RAMmodel_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SF:\Chris\algorithms\RAMmodel -BF:\Chris\algorithms\RAMmodel\cmake-build-debug
+  command = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Chris\algorithms\RAMmodel -BD:\Chris\algorithms\RAMmodel\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

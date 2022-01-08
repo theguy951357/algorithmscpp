@@ -13,9 +13,9 @@ class CountingSort {
 public:
     CountingSort();
 
-private:
+    virtual ~CountingSort();
 
-    void countingSort(vector<int> A, vector<int> B, int k);
+    void countingSort(vector<int> *A, vector<int> *B, int k);
 };
 
 
